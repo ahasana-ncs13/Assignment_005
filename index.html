@@ -20,11 +20,12 @@
      <link rel="stylesheet" href="style.css">
 
 </head>
-<body class="hind-madurai-regular">
+<body class="hind-madurai-regular sm:p-0 p-5">
+
     <header class="header">
 
         <!-- navbar section  -->
-        <nav class="navbar flex justify-between py-6 px-15" >
+        <nav class="navbar flex sm:flex-row flex-col justify-between py-6 px-15" >
             <div class="nav-logo flex items-center gap-1">
                 <div class="img w-12.5">
                     <img src="./assets/logo.png" alt="">
@@ -33,7 +34,7 @@
                 <p class="text-[#006747] font-extrabold text-2xl">Emergency <br>Service</p>
             </div>
 
-            <div class="grid grid-cols-3 gap-5 ">
+            <div class="grid  sm:grid-cols-3 grid-cols-1 gap-5  ">
                 <div class="Heart-icon flex flex-row-reverse items-center rounded-[50px] bg-[#41FF6B]/10 gap-2.5 h-13 w-31 justify-center">
                     <div class="img w-6">
                     <img src="./assets/heart.png" alt="">
@@ -58,19 +59,19 @@
             <div class="w-23 mx-auto mt-[24px]">
                 <img src="./assets/logo-dark.png" alt="">
             </div>
-            <h2 class="banner-title my-[11px] font-bold text-[2.5rem]">Emergency Service Directory</h2>
-            <p class="banner-description mb-[24px] font-semibold text-[1.25rem]">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
+            <h2 class="banner-title my-[11px] font-bold sm:text-[2.5rem] text-[1.75rem]">Emergency Service Directory</h2>
+            <p class="banner-description mb-[24px] font-semibold sm:text-[1.25rem] text-[0.87rem]">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
             </div>
          </section>
     </header>
 
     <main class=" main  bg-[#41FF6B]/10 ">
 
-        <section class="container max-w-[1400px] mx-auto grid grid-cols-12 gap-[30px] py-[48px]">
+        <section class="container max-w-[1400px] mx-auto grid sm:grid-cols-12 grid-cols-1 gap-[30px] py-[48px]">
             <!-- Emergency Hotline Section -->
            <section class="Emergency-Hotline col-span-9">
             <!-- card container -->
-              <div class="card-container grid grid-cols-3 gap-[30px]">
+              <div class="card-container grid sm:grid-cols-3 grid-cols-1 gap-[30px]">
 
                 <!-- card 1 -->
                     <div class="card bg-white rounded-[12px] p-[32px] shadow-[0_3px_5px_rgba(0,0,0,0.15)]">
@@ -301,7 +302,7 @@
            </section>
 
            <!-- History Section -->
-           <section class="history col-span-3 bg-white p-[24px] shadow-[0_3px_5px_rgba(0,0,0,0.15)] rounded-[12px]">
+           <section class="history sm:col-span-3 col-span-8 bg-white p-[24px] shadow-[0_3px_5px_rgba(0,0,0,0.15)] rounded-[12px]">
                <div class="history-nav">
                     <div class="flex justify-between items-center">
                      <p class="roboto-font font-medium text-[#111111] text-[1.25rem]"><i class="fa-regular fa-clock"></i>  Call History</p>
