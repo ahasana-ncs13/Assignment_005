@@ -62,4 +62,19 @@ let callBtns =document.querySelectorAll('.call-btn');
    })   
 }
 
+// copy buttons 
+let copyBtns=document.getElementsByClassName("copy-btns");
+  for (const copy of copyBtns) {
+     copy.addEventListener("click",function(){
+    let copycount=document.getElementById("copy-counts");
+    let copycountIN=copycount.innerText;
+    let newCopyCount = Number(copycountIN) + 1;
+    copycount.innerText=newCopyCount;
+    
+    // copy number 
+    let copiednum = copy.parentNode.parentNode.children[3].innerText;
+    console.log(copiednum);
+    navigator.clipboard.writeText(copiednum);
 
+})
+}
