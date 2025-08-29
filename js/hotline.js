@@ -73,7 +73,6 @@ let copyBtns=document.getElementsByClassName("copy-btns");
     
     // copy number 
     let copiednum = copy.parentNode.parentNode.children[3].innerText;
-    console.log(copiednum);
     navigator.clipboard.writeText(copiednum);
 
 })
